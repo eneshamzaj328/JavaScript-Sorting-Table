@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+.title {
+    margin: 33px auto;
+    text-align: center;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* Sort Btns Container */
+.sort__companies-btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sort__companies-btn-container>div {
+    margin: 10px auto;
+}
+
+/* Buttons */
+button {
+    height: auto;
+    margin: auto;
+    padding: .5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-family: "JetBrains Mono", monospace;
+    text-decoration: none;
+    outline: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    appearance: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,
+        rgba(45, 35, 66, .3) 0 7px 13px -3px,
+        rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    will-change: box-shadow, transform;
+    transition: box-shadow .15s, transform .15s;
+}
+
+button:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+button:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+button:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+@media screen and (max-width: 343px) {
+    button {
+        display: flex;
+    }
+}
+
+/* Table */
+table {
+    margin: 50px auto;
+    border-collapse: collapse;
+    width: 100%;
+    overflow: auto;
+}
+
+table caption {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+    padding: 1rem 0;
+    background-color: rgb(129, 173, 255, .6);
+}
+
+table tr,
+td {
+    padding: 1rem 2rem;
+}
+
+table tr {
+    border-bottom: 1px solid #000 !important;
+}
+
+tr:nth-of-type(odd) {
+    background-color: hsl(0, 0%, 0%, .1);
+}
+
+table tbody {
+    vertical-align: inherit;
+}
+
+table tbody tr:last-child {
+    border: 0 !important;
+}
+
+thead tr {
+    border-color: inherit;
+    background-color: transparent !important;
+}
+
+thead tr th {
+    padding: 1rem 1.5rem !important;
+}
+
+thead,
+tr,
+tbody,
+td,
+tfoot,
+th {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+}

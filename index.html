@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>JS Sorting</title>
+</head>
+
+<body>
+    <main>
+        <h1 class="title">JS Array Methods</h1>
+
+        <div class="container">
+            <div class="sort__companies-btn-container">
+                <div>
+                    <label for="sort__names">Sort Company Names:</label>
+                    <button id="sort__names">DESC</button>
+                </div>
+                <div>
+                    <label for="sort__start-years">Sort Company Start Years:</label>
+                    <button id="sort__start-years">DESC</button>
+                </div>
+                <div>
+                    <label for="sort__end-years">Sort Company End Years:</label>
+                    <button id="sort__end-years">DESC</button>
+                </div>
+            </div>
+            <table class="table">
+                <!-- <caption>Sort in JS</caption> -->
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Company Name</th>
+                        <th>Company Start Year</th>
+                        <th>Company End Year</th>
+                    </tr>
+                </thead>
+                <tbody id="sort-companies"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
