@@ -11,5 +11,6 @@ But you can take those functions out if u want they do the same work.
 
 Read more about:
 
-// Closures //
+// Closures
+
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
